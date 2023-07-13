@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Ginora Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ginora Sans Regular"), url("../font/Ginóra Sans Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Ginora Sans Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ginora Sans Oblique"), url("../font/Ginóra Sans Oblique.woff") format("woff");
+}
+@font-face {
+  font-family: "Ginora Sans Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ginora Sans Light"), url("../font/Ginóra Sans Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Ginora Sans Light Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ginora Sans Light Oblique"), url("../font/Ginóra Sans Light Oblique.woff") format("woff");
+}
+@font-face {
+  font-family: "Ginora Sans Semi Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ginora Sans Semi Bold"), url("../font/Ginóra Sans Semi Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Ginora Sans Semi Bold Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ginora Sans Semi Bold Oblique"), url("../font/Ginóra Sans Semi Bold Oblique.woff") format("woff");
+}
+@font-face {
+  font-family: "Ginora Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ginora Sans Bold"), url("../font/Ginóra Sans Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Ginora Sans Bold Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ginora Sans Bold Oblique"), url("../font/Ginóra Sans Bold Oblique.woff") format("woff");
+}/*# sourceMappingURL=fonts.css.map */
