@@ -48,12 +48,6 @@
   src: local("Ginora Sans Bold Oblique"), url("../font/Ginóra Sans Bold Oblique.woff") format("woff");
 }
 @font-face {
-  font-family: "Ginora Sans Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("/font/Ginóra Sans Regular.woff") format("woff");
-}
-@font-face {
   font-family: "Ginora Sans Oblique";
   font-style: normal;
   font-weight: normal;

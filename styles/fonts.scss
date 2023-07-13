@@ -2,8 +2,7 @@
   font-family: "Ginora Sans Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Ginora Sans Regular"),
-    url("../font/Ginóra\ Sans\ Regular.woff") format("woff");
+  src: url("/font/Ginóra\ Sans\ Regular.woff") format("woff");
 }
 
 @font-face {
@@ -61,4 +60,3 @@
   src: local("Ginora Sans Bold Oblique"),
     url("../font/Ginóra\ Sans\ Bold\ Oblique.woff") format("woff");
 }
-
