@@ -3,7 +3,7 @@
   font-family: "Ginora Sans Regular";
   font-style: normal;
   font-weight: normal;
-  src: url("/font/Ginóra Sans Regular.woff") format("woff");
+  src: url("../font/Ginóra_Sans_Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Ginora Sans Oblique";
