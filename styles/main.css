@@ -9,43 +9,43 @@
   font-family: "Ginora Sans Oblique";
   font-style: normal;
   font-weight: normal;
-  src: local("Ginora Sans Oblique"), url("../font/Ginóra Sans Oblique.woff") format("woff");
+  src: local("Ginora Sans Oblique"), url("../font/Ginóra_Sans_Oblique.woff") format("woff");
 }
 @font-face {
   font-family: "Ginora Sans Light";
   font-style: normal;
   font-weight: normal;
-  src: local("Ginora Sans Light"), url("../font/Ginóra Sans Light.woff") format("woff");
+  src: local("Ginora Sans Light"), url("../font/Ginóra_Sans_Light.woff") format("woff");
 }
 @font-face {
   font-family: "Ginora Sans Light Oblique";
   font-style: normal;
   font-weight: normal;
-  src: local("Ginora Sans Light Oblique"), url("../font/Ginóra Sans Light Oblique.woff") format("woff");
+  src: local("Ginora Sans Light Oblique"), url("../font/Ginóra_Sans_Light_Oblique.woff") format("woff");
 }
 @font-face {
   font-family: "Ginora Sans Semi Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Ginora Sans Semi Bold"), url("../font/Ginóra Sans Semi Bold.woff") format("woff");
+  src: local("Ginora Sans Semi Bold"), url("../font/Ginóra_Sans_Semi_Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Ginora Sans Semi Bold Oblique";
   font-style: normal;
   font-weight: normal;
-  src: local("Ginora Sans Semi Bold Oblique"), url("../font/Ginóra Sans Semi Bold Oblique.woff") format("woff");
+  src: local("Ginora Sans Semi Bold Oblique"), url("../font/Ginóra_Sans_Semi_Bold_Oblique.woff") format("woff");
 }
 @font-face {
   font-family: "Ginora Sans Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Ginora Sans Bold"), url("../font/Ginóra Sans Bold.woff") format("woff");
+  src: local("Ginora Sans Bold"), url("../font/Ginóra_Sans_Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Ginora Sans Bold Oblique";
   font-style: normal;
   font-weight: normal;
-  src: local("Ginora Sans Bold Oblique"), url("../font/Ginóra Sans Bold Oblique.woff") format("woff");
+  src: local("Ginora Sans Bold Oblique"), url("../font/Ginóra_Sans_Bold_Oblique.woff") format("woff");
 }
 body {
   background: #1d1d1d;
@@ -173,16 +173,10 @@ body {
   -webkit-mask-image: linear-gradient(to right, black, black);
   mask-image: linear-gradient(to right, black, black);
 }
-@media (max-width: 827px) {
-  .preview {
-    background: url(../img/colored.png) no-repeat right 552px;
-  }
-}
 @media (max-width: 712px) {
   .preview {
     background-size: 360px;
     padding: 100px 0 180px 0;
-    background: url(../img/colored.png) no-repeat right 54px;
   }
   .preview__arrow {
     display: none;
@@ -192,11 +186,6 @@ body {
     line-height: 56px;
     margin-top: 0;
     text-align: start;
-  }
-}
-@media (max-width: 712px) {
-  .preview {
-    background: url(../img/colored.png) no-repeat right 170px;
   }
 }
 

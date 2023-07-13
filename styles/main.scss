@@ -141,14 +141,10 @@ body {
     mask-image: linear-gradient(to right, black, black);
   }
 
-  @media (max-width: 827px) {
-    background: url(../img/colored.png) no-repeat right 552px;
-  }
-
   @media (max-width: 712px) {
     background-size: 360px;
     padding: 100px 0 180px 0;
-    background: url(../img/colored.png) no-repeat right 54px;
+
     &__arrow {
       display: none;
     }
@@ -159,9 +155,6 @@ body {
       margin-top: 0;
       text-align: start;
     }
-  }
-  @media (max-width: 712px) {
-    background: url(../img/colored.png) no-repeat right 170px;
   }
 }
 
