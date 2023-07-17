@@ -847,6 +847,359 @@ body {
   }
 }
 
+.stories {
+  padding: 200px 0;
+
+  &__title {
+    color: $primary-title-color;
+    font-size: 62px;
+    line-height: 50px;
+    text-transform: capitalize;
+    margin: 30px 0 90px 0;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 140px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 496px;
+  }
+
+  &__box-main {
+    padding: 40px 15px 0 15px;
+    color: $secondary-title-color;
+    font-size: 44px;
+    line-height: 50px;
+    text-transform: capitalize;
+  }
+
+  &__main-time {
+    color: $secondary-title-color;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: capitalize;
+  }
+
+  &__box-main-active {
+    background: linear-gradient(140deg, #99a9ff 0%, #5ce4cf 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__footer-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__btn-text {
+    font-family: "Ginora Sans Semi Bold";
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $primary-color;
+  }
+
+  &__arrow {
+    display: flex;
+    gap: 30px;
+  }
+
+  @media (max-width: 1202px) {
+    &__wrap {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding: 100px 0;
+
+    &__title {
+      margin: 20px 0 60px 0;
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    &__wrap {
+      gap: 40px;
+      margin-bottom: 60px;
+      padding: 0 15px;
+    }
+
+    &__box-main {
+      padding: 0;
+      padding-top: 30px;
+    }
+
+    &__box-main {
+      font-size: 26px;
+      line-height: normal;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__main-time {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  @media (max-width: 430px) {
+    &__footer {
+      flex-direction: column-reverse;
+      align-items: stretch;
+      gap: 20px;
+    }
+
+    &__arrow {
+      justify-content: flex-end;
+    }
+  }
+}
+
 .footer {
   flex: 0 0 auto;
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__main-left {
+    flex-basis: 565px;
+  }
+
+  &__left-title {
+    background: var(
+      --angular-gradient,
+      conic-gradient(
+        from 180deg at 50% 50%,
+        #8093ff 42.37495422363281deg,
+        #66ffe5 199.8749542236328deg
+      )
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 62px;
+    line-height: 74px;
+    text-transform: capitalize;
+  }
+
+  &__left-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    color: $secondary-title-color;
+    margin-top: 40px;
+  }
+
+  &__main-right {
+    flex-basis: 466px;
+  }
+
+  &__right-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-input {
+    padding: 0 20px 22px 30px;
+    border-bottom: 1px solid $border-input;
+    color: $secondary-title-color;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: capitalize;
+    position: relative;
+    width: 100%;
+  }
+
+  &__form-wrap {
+    position: relative;
+    width: 100%;
+    margin-top: 36px;
+  }
+
+  &__form-wrap::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #99a9ff 0%, #5ce4cf 100%);
+    left: 30px;
+    bottom: 0;
+  }
+
+  &__form-input::placeholder {
+    color: $secondary-title-color;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: capitalize;
+  }
+
+  &__form-btn {
+    font-family: "Ginora Sans Semi Bold";
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $primary-color;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 60px 0 0 30px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0;
+  }
+
+  &__link-left {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__link-right {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__link-text {
+    color: $secondary-title-color;
+    font-size: 16px;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+  }
+
+  &__link-text:hover {
+    color: $primary-color;
+  }
+
+  &__design {
+    text-align: center;
+    padding: 60px 0 40px 0;
+  }
+
+  &__design-text {
+    color: $secondary-title-color;
+    font-size: 16px;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+  }
+
+  &__design-link {
+    color: $primary-color;
+    font-size: 16px;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 1070px) {
+    &__main {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 990px) {
+    &__link {
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 740px) {
+    &__main {
+      flex-direction: column;
+    }
+
+    &__main-left {
+      flex-basis: 0;
+    }
+
+    &__main-right {
+      flex-basis: 0;
+    }
+
+    &__left-subtitle {
+      margin-top: 20px;
+    }
+
+    &__left-title {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    &__form-input {
+      padding: 0 20px 20px 10px;
+    }
+
+    &__form-wrap::after {
+      left: 10px;
+    }
+
+    &__form-input {
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+
+    &__form-input::placeholder {
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+
+    &__form-btn {
+      margin: 0;
+      margin-top: 60px;
+    }
+
+    &__link {
+      padding: 60px 0;
+    }
+
+    &__link-text {
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0;
+    }
+
+    &__design {
+      padding: 30px 0 34px 0;
+    }
+
+    &__design-text {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    &__link-left {
+      gap: 20px;
+    }
+
+    &__link-right {
+      gap: 20px;
+    }
+
+    @media (max-width: 436px) {
+      &__design-text {
+        letter-spacing: 0;
+      }
+    }
+  }
 }
