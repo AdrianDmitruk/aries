@@ -19,6 +19,25 @@ body {
   position: relative;
 }
 
+.bg__main {
+  background: url(../img/bg-main.png) no-repeat center top -33px;
+
+  @media (max-width: 714px) {
+    background: none;
+  }
+}
+
+.bg__colored {
+  background: url(../img/colored.png) no-repeat bottom -82px right 97px;
+  @media (max-width: 918px) {
+    background-position: bottom -82px right 0;
+  }
+  @media (max-width: 712px) {
+    background-size: 142px;
+    background-position: bottom 0 right 0;
+  }
+}
+
 .header {
   flex: 0 0 auto;
   margin-top: 30px;
@@ -43,6 +62,10 @@ body {
     text-transform: uppercase;
     font-size: 16px;
     color: $primary-title-color;
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 
   &__right {
@@ -54,6 +77,10 @@ body {
     text-transform: uppercase;
     font-size: 16px;
     color: $primary-title-color;
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 
   &__right-wrap {
@@ -66,6 +93,10 @@ body {
     text-transform: uppercase;
     font-size: 16px;
     color: $primary-title-color;
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 
   @media (max-width: 1159px) {
@@ -103,10 +134,13 @@ body {
 
 .main {
   flex: 1 0 auto;
+  background: url(../img/bg-faster.png) no-repeat right top 270px;
+  @media (max-width: 810px) {
+    background: none;
+  }
 }
 
 .preview {
-  // background: url(../img/colored.png) no-repeat right 360px;
   padding-bottom: 55px;
 
   &__container {
@@ -124,9 +158,8 @@ body {
     margin-top: 171px;
     font-family: "Ginora Sans Bold";
     font-size: 82px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 96px;
+    line-height: 1.17;
     text-transform: capitalize;
     max-width: 836px;
     text-align: center;
@@ -141,17 +174,24 @@ body {
     mask-image: linear-gradient(to right, black, black);
   }
 
+  &__arrow {
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
   @media (max-width: 712px) {
     background-size: 360px;
-    padding: 100px 0 180px 0;
+    padding: 100px 0 100px 0;
 
     &__arrow {
       display: none;
     }
 
     &__title {
-      font-size: 42px;
-      line-height: 56px;
+      font-size: 31px;
+      line-height: 1.52;
       margin-top: 0;
       text-align: start;
     }
@@ -160,6 +200,7 @@ body {
 
 .bulding {
   padding: 70px 0 155px 0;
+
   &__wrap {
     position: relative;
   }
@@ -188,14 +229,14 @@ body {
 
   &__second-title {
     font-size: 62px;
-    line-height: 74px;
+    line-height: 1.19;
     text-transform: capitalize;
     color: $primary-title-color;
   }
 
   &__second-subtitle {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     color: $secondary-title-color;
   }
 
@@ -208,8 +249,12 @@ body {
     font-family: "Ginora Sans Semi Bold";
     color: $primary-color;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 1.2;
     text-transform: uppercase;
+
+    &:hover {
+      color: $secondary-title-color;
+    }
   }
 
   @media (max-width: 1000px) {
@@ -243,7 +288,7 @@ body {
 
     &__second-title {
       font-size: 36px;
-      line-height: 44px;
+      line-height: 1.22;
     }
   }
 }
@@ -259,14 +304,14 @@ body {
 
   &__title {
     font-size: 62px;
-    line-height: 74px;
+    line-height: 1.19;
     color: $primary-title-color;
     flex-basis: 664px;
   }
 
   &__subtitle {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     color: $secondary-title-color;
     flex-basis: 442px;
   }
@@ -297,13 +342,18 @@ body {
   @media (max-width: 566px) {
     &__title {
       font-size: 36px;
-      line-height: 44px;
+      line-height: 1.22;
     }
   }
 }
 
 .news {
   padding-bottom: 200px;
+  background: url(../img/bg-design.png) no-repeat left top 307px;
+
+  @media (max-width: 1100px) {
+    background: none;
+  }
 
   &__wrap {
     display: flex;
@@ -325,20 +375,20 @@ body {
     color: $primary-gray;
     text-transform: uppercase;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 1.125;
     letter-spacing: 4.8px;
     margin-bottom: 6px;
   }
 
   &__title {
     font-size: 44px;
-    line-height: 50px;
+    line-height: 1.14;
     color: $primary-title-color;
   }
 
   &__subtitle {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     color: $secondary-title-color;
     margin: 20px 0 45px 0;
   }
@@ -354,8 +404,11 @@ body {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 600;
-    line-height: 16px;
+    line-height: 1.2;
     color: $primary-color;
+    &:hover {
+      color: $secondary-title-color;
+    }
   }
 
   &__second {
@@ -405,7 +458,7 @@ body {
 
     &__category {
       font-size: 12px;
-      line-height: 18px;
+      line-height: 1.5;
       letter-spacing: 3.6px;
       margin-bottom: 10px;
     }
@@ -432,7 +485,7 @@ body {
 .portfolios {
   &__title {
     font-size: 62px;
-    line-height: 74px;
+    line-height: 1.19;
     color: $primary-title-color;
     margin: 30px 0 30px 0;
   }
@@ -457,7 +510,7 @@ body {
   &__block-name {
     font-family: "Ginora Sans Light";
     font-size: 36px;
-    line-height: 36px;
+    line-height: 1.2;
     color: $secondary-title-color;
   }
 
@@ -480,7 +533,7 @@ body {
   @media (max-width: 504px) {
     &__title {
       font-size: 36px;
-      line-height: 44px;
+      line-height: 1.22;
       margin: 20px 0 20px 0;
     }
 
@@ -490,7 +543,7 @@ body {
 
     &__block-name {
       font-size: 26.024px;
-      line-height: 26.024px;
+      line-height: 1.2;
     }
 
     &__block-active {
@@ -548,18 +601,18 @@ body {
     text-align: center;
     font-family: "Ginora Sans Semi Bold";
     font-size: 26px;
-    line-height: 24px;
+    line-height: 1.2;
     color: $secondary-title-color;
   }
 
   &__box-subtitle {
     font-size: 16px;
-    line-height: 14px;
+    line-height: 1.2;
     color: $secondary-title-color;
   }
 
   &__border {
-    width: 1px;
+    width: 4px;
     height: 992px;
     background: linear-gradient(
       90deg,
@@ -575,11 +628,18 @@ body {
     flex-direction: column;
     padding: 173px 164px 121px 69px;
     background: $bg-shape;
+    position: relative;
+  }
+
+  &__right-bg {
+    position: absolute;
+    top: -87px;
+    left: 0;
   }
 
   &__right-title {
     font-size: 62px;
-    line-height: 74px;
+    line-height: 1.19;
     color: $primary-white;
     max-width: 373px;
   }
@@ -604,10 +664,14 @@ body {
     line-height: 16px;
     text-transform: uppercase;
     color: $primary-color;
+
+    &:hover {
+      color: $secondary-title-color;
+    }
   }
   @media (max-width: 1304px) {
     padding: 200px 0 200px 20px;
-    gap: 5px;
+    gap: 20px;
 
     &__right-title {
       max-width: none;
@@ -618,6 +682,10 @@ body {
     }
     &__right {
       padding: 173px 55px 121px 69px;
+    }
+
+    &__right-bg {
+      display: none;
     }
   }
 
@@ -678,6 +746,12 @@ body {
 }
 
 .jobs {
+  background: url(../img/bg-portfolio.png) no-repeat right bottom;
+
+  @media (max-width: 862px) {
+    background: none;
+  }
+
   &__tile {
     font-size: 62px;
     line-height: 74px;
@@ -911,6 +985,9 @@ body {
     line-height: 16px;
     text-transform: uppercase;
     color: $primary-color;
+    &:hover {
+      color: $secondary-title-color;
+    }
   }
 
   &__arrow {
@@ -973,6 +1050,12 @@ body {
 
 .footer {
   flex: 0 0 auto;
+
+  background: url(../img/bg-footer.png) no-repeat left top 120px;
+
+  @media (max-width: 1010px) {
+    background: none;
+  }
 
   &__main {
     display: flex;
@@ -1060,6 +1143,10 @@ body {
     gap: 10px;
     align-items: center;
     margin: 60px 0 0 30px;
+
+    &:hover {
+      color: $secondary-title-color;
+    }
   }
 
   &__link {
